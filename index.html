@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11110f" />
+  <title>Case File 1892 | Historical Immersion</title>
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="cinema">
+    <div id="bg" class="bg bg-archive"></div>
+    <div class="light-leak"></div>
+    <div class="film-grain"></div>
+    <div class="vignette"></div>
+
+    <header id="hud" class="hud hidden" aria-label="Game status">
+      <div class="hud-brand">
+        <span class="eyebrow">CASE FILE</span>
+        <strong>1892</strong>
+      </div>
+      <div class="autonomy">
+        <div class="autonomy-top">
+          <span>YOUR AUTONOMY</span>
+          <span id="autonomyValue">100%</span>
+        </div>
+        <div class="autonomy-track"><div id="autonomyBar" class="autonomy-bar"></div></div>
+      </div>
+      <div class="hud-actions">
+        <button id="audioBtn" class="icon-btn" aria-label="Mute or unmute audio">SOUND ON</button>
+        <button id="restartBtn" class="icon-btn subtle" aria-label="Restart experience">RESTART</button>
+      </div>
+    </header>
+
+    <main id="scene" class="scene" aria-live="polite"></main>
+
+    <div id="subtitle" class="subtitle hidden" aria-live="polite"></div>
+    <div id="toast" class="toast hidden"></div>
+
+    <audio id="rain" src="audio/rain-loop.wav" loop preload="auto"></audio>
+    <audio id="roomTone" src="audio/room-tone.wav" loop preload="auto"></audio>
+    <audio id="pageTurn" src="audio/page-turn.wav" preload="auto"></audio>
+    <audio id="penScratch" src="audio/pen-scratch.wav" preload="auto"></audio>
+    <audio id="latch" src="audio/latch.wav" preload="auto"></audio>
+    <audio id="footsteps" src="audio/footsteps.wav" preload="auto"></audio>
+  </div>
+
+  <noscript>This experience requires JavaScript.</noscript>
+  <script src="game.js"></script>
+</body>
+</html>
